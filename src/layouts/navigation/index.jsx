@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Breadcrumbs from '../../components/NavItem/Breadcrumbs';
-import Middle from '../../components/NavItem/Middle';
-import NavLink from '../../components/NavItem/NavLink';
-import SmallOne from '../../components/NavItem/SmallOne';
+import Breadcrumbs from '../../components/NavItemSections/Breadcrumbs';
+import Middle from '../../components/NavItemSections/Middle';
+import NavLink from '../../components/NavItemSections/NavLink';
+import SmallOne from '../../components/NavItemSections/SmallOne';
 
 const Navigation = () => {
   return (
