@@ -1,0 +1,24 @@
+{
+  // Format code on save
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  // Use ESLint for code formatting and linting
+  "eslint.validate": ["javascript", "javascriptreact"],
+  // Enable auto import suggestions
+  "javascript.suggest.autoImports": true,
+  // Enable Emmet abbreviations in JSX
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Use Prettier for code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Auto fix ESLint issues on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  // Enable bracket pair colorization
+  "editor.bracketPairColorization.enabled": true,
+  // Enable inlay hints for TypeScript and JavaScript
+  "javascript.inlayHints.parameterNames.enabled": "all"
+}

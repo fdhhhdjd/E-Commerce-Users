@@ -1,0 +1,37 @@
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build output directories
+dist/
+build/
+out/
+
+# Temporary files and directories
+.tmp/
+.temp/
+
+# Version control directories
+.git/
+.svn/
+.hg/
+
+# IDE and editor directories
+.idea/
+.vscode/
+*.swp
+*.bak
+
+# Log files
+*.log
+
+# Environment files
+.env
+.env.local
+
+# Other common directories to ignore
+public/
+coverage/
+
+vite.config.js
+commitlint.config.js

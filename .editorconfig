@@ -1,0 +1,37 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+charset = utf-8
+
+# 2 space indentation
+[*.{js,jsx,json,html,css,scss}]
+indent_style = space
+indent_size = 2
+
+# Matches the exact files either package.json or .prettierrc
+[{package.json,.prettierrc}]
+indent_style = space
+indent_size = 2
+
+# Use tab for .md files
+[*.md]
+indent_style = space
+indent_size = 2
+
+# Max line length
+[*.{js,jsx,ts,tsx,css,scss,html}]
+max_line_length = 80
+
+# Prettier plugin integration
+[*.{js,jsx}]
+quote_type = single
+jsx_bracket_same_line = false

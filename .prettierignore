@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules
+bower_components
+
+# Build output directories
+dist
+build
+out
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Version control directories
+.git
+.svn
+.hg
+
+# Configuration files
+package-lock.json
+yarn.lock
+
+# Log files
+*.log
+
+# Other
+coverage
