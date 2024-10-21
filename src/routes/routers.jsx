@@ -12,11 +12,11 @@ const routes = [
     element: <App />,
     children: [
       {
-        index: true,
+        path: 'auth',
         element: <AuthLayout />,
         children: [
           {
-            index: true,
+            path: 'login',
             element: <Login />
           },
           {
