@@ -40,15 +40,15 @@ const PaymentLogos = () => {
     }
   ];
   return (
-    <div className='w-full py-6 bg-blackPrimary shadow justify-between items-center inline-flex'>
+    <div className='w-full py-6 bg-blackPrimary shadow flex justify-between items-center'>
       <div className='text-[#7f7f7f] text-sm font-normal font-poppins leading-[21px]'>
-        Ecobazar eCommerce © 2021. All Rights Reserved
+        Ecobazar eCommerce © 2024. All Rights Reserved
       </div>
       <div className='justify-start items-start gap-2 flex'>
         {paymentLogos.map((logo, index) => (
-          <div key={index} className='w-[45px] h-[31.76px'>
+          <div key={index} className='w-[45px] h-[31.76px]'>
             <div className='w-[45px] h-[31.76px] left-0 top-0 flex justify-center items-center'>
-              <div className='w-[45px] h-[31.76px] left-0 top-0 bg-blackPrimary rounded-md border border-[#333333]' />
+              <div className='w-[45px] h-[31.76px] left-0 top-0 bg-blackPrimary rounded-md border border-darkGray' />
               <img
                 className={`w-[${logo.width}] h-[${logo.height}] left-[${logo.offsetX}] top-[${logo.offsetY}] absolute`}
                 src={logo.src}
@@ -58,7 +58,7 @@ const PaymentLogos = () => {
           </div>
         ))}
         <div className='w-[65px] h-8'>
-          <div className='w-[65px] h-8 left-0 top-0  bg-blackPrimary rounded-md border border-[#333333] flex justify-center flex-col'>
+          <div className='w-[65px] h-8 left-0 top-0  bg-blackPrimary rounded-md border border-darkGray flex justify-center flex-col'>
             <div className='flex justify-center items-center'>
               <div className='w-[11px] h-[11px] left-[5px] top-[4px]  bg-blackPrimary'>
                 <div className='w-[8.25px] h-[9.17px] left-[1.38px] top-[0.92px]'>

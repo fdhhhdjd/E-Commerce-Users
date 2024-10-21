@@ -5,11 +5,11 @@ import { cn } from '@/helpers';
 
 const NavLink = () => {
   return (
-    <div className='w-full h-[60px] px-[20px] py-4 flex justify-between items-center md:px-[100px] lg:px-[150px] xl:px-[200px] 2xl:px-[300px] border-t border-lightGray'>
-      <div className='flex items-center gap-8'>
+    <div className='w-full h-[60px] md:px-[100px] lg:px-[150px] xl:px-[200px] 2xl:px-[300px] py-4 flex justify-between items-center border-t border-lightGray'>
+      <div className='flex items-center gap-8 overflow-x-auto'>
         {['Home', 'Shop', 'Pages', 'Blog', 'About Us', 'Contact Us'].map(
           (item, index) => (
-            <div key={index} className='flex justify-start items-center gap-1 '>
+            <div key={index} className='flex justify-start items-center gap-1'>
               <div
                 className={cn(
                   'text-sm font-medium font-poppins leading-[21px]',
@@ -18,7 +18,7 @@ const NavLink = () => {
               >
                 {item}
               </div>
-              {index < 4 && (
+              {index < 5 && (
                 <div>
                   <img src={group} alt='this is group' />
                 </div>

@@ -5,7 +5,7 @@ import search from '@/assets/images/nav/Search.svg';
 
 const Middle = () => {
   return (
-    <div className='w-full h-[93px] bg-white shadow-inner flex justify-between items-center px-4 md:px-[100px] lg:px-[150px] xl:px-[200px] 2xl:px-[300px]'>
+    <div className='w-full h-[93px] bg-white shadow-inner flex justify-between items-center md:px-[100px] lg:px-[150px] xl:px-[200px] 2xl:px-[300px]'>
       {/* Logo */}
       <div className='flex items-center gap-2 cursor-pointer'>
         <div className='w-8 h-8 '>
