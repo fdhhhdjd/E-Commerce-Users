@@ -1,15 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import AuthLayout from '@/layouts/authLayout';
+import AuthLayout from '@/layouts/auth';
+import MainLayout from '@/layouts/main';
 import Login from '@/pages/auth/login';
 import Register from '@/pages/auth/register';
-
-import App from '@/App';
 
 const routes = [
   {
     path: '/',
-    element: <App />,
+    element: <MainLayout />,
     children: [
       {
         path: 'auth',
