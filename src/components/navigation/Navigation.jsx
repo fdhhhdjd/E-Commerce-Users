@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Middle from '@/components/navigation/item/Middle';
-import SmallOne from '@/components/navigation/item/SmallOne';
+import Middle from './item/Middle';
+import SmallOne from './item/SmallOne';
 
 const Navigation = () => {
   return (
