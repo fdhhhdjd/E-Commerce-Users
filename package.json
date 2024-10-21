@@ -6,13 +6,44 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint ./src --ext .cjs,.mjs,.js,.jsx,.cts,.mts --fix --ignore-path .eslintignore && echo \"Tai Dev Check Eslint ✅\"",
+    "lint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint . --fix --ext .js,.jsx",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "prepare": "husky install",
+    "pre-commit": "echo \"[Husky] pre-commit\"",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run lint",
+      "npm run format"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "commitlint": {
+    "rules": {
+      "header-max-length": [
+        2,
+        "always",
+        130
+      ]
+    },
+    "extends": [
+      "./commitlint.config.js"
+    ]
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "clsx": "^2.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0"
+    "react-router-dom": "^6.27.0",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
