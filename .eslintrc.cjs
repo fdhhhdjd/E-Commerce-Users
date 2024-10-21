@@ -185,7 +185,6 @@ module.exports = {
   overrides: [
     {
       files: ['*.cjs', '*.mjs', '*.js', '*.jsx', '*.cts', '*.mts']
-      // other settings
     }
   ]
 };
