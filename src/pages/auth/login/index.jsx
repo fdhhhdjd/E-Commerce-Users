@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Navigation from '@/components/navigation/Navigation';
+import Navigation from '@/layouts/navigation';
 
 const Login = () => {
   return (
