@@ -13,7 +13,8 @@ module.exports = {
         }
       },
       backgroundColor: {
-        greenPrimary: '#00b206'
+        greenPrimary: '#00b206',
+        whitePrimary: '#f7f7f7'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
