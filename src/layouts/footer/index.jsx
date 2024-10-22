@@ -3,8 +3,8 @@ import PaymentLogos from '@/components/FooterSections/PaymentLogos';
 
 const Footer = () => {
   return (
-    <div className='w-full h-[368px] pt-[60px] flex flex-col justify-between bg-[#191919] md:px-[100px] lg:px-[150px] xl:px-[200px] 2xl:px-[300px]'>
-      <div className='flex justify-between gap-4'>
+    <div className='w-full h-full pt-[60px] flex flex-col justify-between bg-[#191919] md:px-[100px] lg:px-[150px] xl:px-[200px] 2xl:px-[300px]'>
+      <div className='flex flex-col md:flex-row justify-between gap-4'>
         <div className='flex-col justify-start gap-4 flex'>
           <div className='justify-start items-center gap-2 flex'>
             <div className='w-8 h-8'>
@@ -34,9 +34,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='w-full h-full flex justify-around'>
-          <div className='flex-col justify-start gap-5 flex'>
-            <div className='text-white text-base font-medium font-poppins leading-normal'>
+
+        {/* Adjust the flex layout based on screen size */}
+        <div className='w-full h-full flex flex-row md:flex-row justify-around text-sm gap-2'>
+          {/* My Account Section */}
+          <div className='flex-col justify-start gap-2 flex'>
+            <div className='text-white md:text-base sm:text-sm font-medium font-poppins leading-normal '>
               My Account
             </div>
             <div className='flex-col justify-start gap-3 flex'>
@@ -47,15 +50,17 @@ const Footer = () => {
                 Order History
               </div>
               <div className='text-white text-sm font-normal font-poppins leading-[21px]'>
-                Shoping Cart
+                Shopping Cart
               </div>
               <div className='text-graySecondary text-sm font-normal font-poppins leading-[21px]'>
                 Wishlist
               </div>
             </div>
           </div>
+
+          {/* Helps Section */}
           <div className='flex-col justify-start gap-5 flex'>
-            <div className='text-white text-base font-medium font-poppins leading-normal'>
+            <div className='text-white md:text-base sm:text-sm font-medium font-poppins leading-normal '>
               Helps
             </div>
             <div className='flex-col justify-start gap-3 flex'>
@@ -63,18 +68,20 @@ const Footer = () => {
                 Contact
               </div>
               <div className='text-graySecondary text-sm font-normal font-poppins leading-[21px]'>
-                Faqs
+                FAQs
               </div>
               <div className='text-graySecondary text-sm font-normal font-poppins leading-[21px]'>
-                Terms & Condition
+                Terms & Conditions
               </div>
               <div className='text-graySecondary text-sm font-normal font-poppins leading-[21px]'>
                 Privacy Policy
               </div>
             </div>
           </div>
+
+          {/* Proxy Section */}
           <div className='flex-col justify-start gap-5 flex'>
-            <div className='text-white text-base font-medium font-poppins leading-normal'>
+            <div className='text-white font-medium font-poppins leading-normal md:text-base sm:text-sm '>
               Proxy
             </div>
             <div className='flex-col justify-start gap-3 flex'>
@@ -92,8 +99,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
+          {/* Categories Section */}
           <div className='flex-col justify-start gap-5 flex'>
-            <div className='text-white text-base font-medium font-poppins leading-normal'>
+            <div className='text-white font-medium font-poppins leading-normal md:text-base sm:text-sm'>
               Categories
             </div>
             <div className='flex-col justify-start gap-3 flex'>
@@ -113,7 +122,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
       <div className='border-t border-graySecondary'></div>
+
       {/* Payment Methods */}
       <PaymentLogos />
     </div>

@@ -41,7 +41,7 @@ const PaymentLogos = () => {
   ];
   return (
     <div className='w-full py-6 bg-blackPrimary shadow flex justify-between items-center'>
-      <div className='text-[#7f7f7f] text-sm font-normal font-poppins leading-[21px]'>
+      <div className='text-[#7f7f7f] font-normal font-poppins '>
         Ecobazar eCommerce © 2024. All Rights Reserved
       </div>
       <div className='justify-start items-start gap-2 flex'>
