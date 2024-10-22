@@ -4,6 +4,7 @@ import AuthLayout from '@/layouts/auth';
 import MainLayout from '@/layouts/main';
 import Login from '@/pages/auth/login';
 import Register from '@/pages/auth/register';
+import FaqsPage from '@/pages/faqs';
 import NotFound from '@/pages/notfound';
 
 const routes = [
@@ -24,6 +25,10 @@ const routes = [
             element: <Register />
           }
         ]
+      },
+      {
+        path: 'faqs',
+        element: <FaqsPage />
       },
       {
         path: '*',
