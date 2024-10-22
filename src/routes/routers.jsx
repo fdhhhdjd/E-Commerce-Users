@@ -5,6 +5,7 @@ import MainLayout from '@/layouts/main';
 import Login from '@/pages/auth/login';
 import OTP from '@/pages/auth/otp';
 import Register from '@/pages/auth/register';
+import ResetPassword from '@/pages/auth/reset-password';
 import NotFound from '@/pages/notfound';
 
 const routes = [
@@ -27,6 +28,10 @@ const routes = [
           {
             path: 'otp',
             element: <OTP />
+          },
+          {
+            path: 'reset-password',
+            element: <ResetPassword />
           }
         ]
       },
