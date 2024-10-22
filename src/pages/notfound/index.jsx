@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import notfound from '@/assets/images/notfound/NotFound.svg';
 
 const NotFound = () => {
@@ -14,9 +16,12 @@ const NotFound = () => {
         sagittis tortor at metus mollis
       </div>
       <div className='h-[45px] px-8 py-3.5 bg-[#00b206] rounded-[43px] flex justify-center items-center gap-3 '>
-        <button className='text-white text-sm font-semibold font-poppins leading-[16.80px]'>
+        <Link
+          to='/'
+          className='text-white text-sm font-semibold font-poppins leading-[16.80px]'
+        >
           Back to Home
-        </button>
+        </Link>
       </div>
     </div>
   );
