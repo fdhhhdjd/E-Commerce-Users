@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Group from '@/assets/images/nav/Group.svg';
 import MapPin from '@/assets/images/nav/MapPin.svg';
 
@@ -41,15 +43,21 @@ const SmallOne = () => {
 
         {/* Login and Register */}
         <div className='flex items-center gap-1'>
-          <div className='text-lightGray text-xs sm:text-sm font-normal font-poppins leading-none cursor-pointer'>
+          <Link
+            to='/auth/login'
+            className='text-lightGray text-xs sm:text-sm font-normal font-poppins leading-none cursor-pointer'
+          >
             Sign In
-          </div>
+          </Link>
           <div className='text-lightGray text-xs sm:text-sm font-normal font-poppins leading-none cursor-pointer'>
             /
           </div>
-          <div className='text-lightGray text-xs sm:text-sm font-normal font-poppins leading-none cursor-pointer'>
+          <Link
+            to='/auth/register'
+            className='text-lightGray text-xs sm:text-sm font-normal font-poppins leading-none cursor-pointer'
+          >
             Sign Up
-          </div>
+          </Link>
         </div>
       </div>
     </div>
