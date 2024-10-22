@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import React from 'react';
 
 import eye from '@/assets/images/auth/Eye.svg';
 import eyeOff from '@/assets/images/auth/EyeOff.svg';
 
 const ResetPassword = () => {
   // State for toggling password visibility
-  const [showNewPassword, setShowNewPassword] = useState(false);
-  const [showOldPassword, setShowOldPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = React.useState(false);
+  const [showOldPassword, setShowOldPassword] = React.useState(false);
 
   // Functions to toggle password visibility for each input field
   const toggleNewPasswordVisibility = () => {
