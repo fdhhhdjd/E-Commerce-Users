@@ -4,6 +4,7 @@ import AuthLayout from '@/layouts/auth';
 import MainLayout from '@/layouts/main';
 import Login from '@/pages/auth/login';
 import Register from '@/pages/auth/register';
+import NotFound from '@/pages/notfound';
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
             element: <Register />
           }
         ]
+      },
+      {
+        path: '*',
+        element: <NotFound />
       }
     ]
   }
