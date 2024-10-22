@@ -6,6 +6,7 @@ import Login from '@/pages/auth/login';
 import OTP from '@/pages/auth/otp';
 import Register from '@/pages/auth/register';
 import ResetPassword from '@/pages/auth/reset-password';
+import Verification from '@/pages/auth/verification';
 import NotFound from '@/pages/notfound';
 
 const routes = [
@@ -32,6 +33,10 @@ const routes = [
           {
             path: 'reset-password',
             element: <ResetPassword />
+          },
+          {
+            path: 'verify/:token',
+            element: <Verification />
           }
         ]
       },
