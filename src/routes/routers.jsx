@@ -7,6 +7,7 @@ import OTP from '@/pages/auth/otp';
 import Register from '@/pages/auth/register';
 import ResetPassword from '@/pages/auth/reset-password';
 import Verification from '@/pages/auth/verification';
+import FaqsPage from '@/pages/faqs';
 import NotFound from '@/pages/notfound';
 
 const routes = [
@@ -39,6 +40,10 @@ const routes = [
             element: <Verification />
           }
         ]
+      },
+      {
+        path: 'faqs',
+        element: <FaqsPage />
       },
       {
         path: '*',
