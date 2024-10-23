@@ -44,7 +44,9 @@ const FaqsPage = () => {
           ))}
         </div>
       </div>
-      <img src={imgFaqs} className='hidden md:block w-[741px] h-[808px] ml-4' />
+      <div>
+        <img src={imgFaqs} className='hidden md:block w-full h-full ml-4' />
+      </div>
     </div>
   );
 };
