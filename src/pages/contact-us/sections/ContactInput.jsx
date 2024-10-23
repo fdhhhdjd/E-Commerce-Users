@@ -20,7 +20,7 @@ const ContactInput = () => {
         <div className='flex flex-col md:flex-row gap-4'>
           <input
             type='text'
-            className='w-full md:w-[434px] h-[49px] pl-4 pr-4 py-3.5 bg-white rounded-md border border-[#e6e6e6] text-[#666666] text-base font-normal font-poppins  leading-tight'
+            className='w-full md:max-w-[434px] h-[49px] pl-4 pr-4 py-3.5 bg-white rounded-md border border-[#e6e6e6] text-[#666666] text-base font-normal font-poppins  leading-tight'
             placeholder='Template Cookie'
           />
           <input
@@ -33,13 +33,13 @@ const ContactInput = () => {
         {/* 2.2 */}
         <input
           type='text'
-          className='w-full md:w-[884px] h-[49px] pl-4 pr-4 py-3.5 bg-white rounded-md border border-[#00b206] text-[#191919] text-base font-normal font-poppins  leading-tight'
+          className='w-full md:max-w-[884px] h-[49px] pl-4 pr-4 py-3.5 bg-white rounded-md border border-[#00b206] text-[#191919] text-base font-normal font-poppins  leading-tight'
           placeholder='Hello|'
         />
 
         {/* 2.3 */}
         <textarea
-          className='w-full md:w-[884px] h-[98px] pl-4 pr-4 pt-3.5 pb-[20px] bg-white rounded-md border border-[#e6e6e6] text-[#999999] text-base font-normal font-poppins  leading-tight'
+          className='w-full md:max-w-[884px] h-[98px] pl-4 pr-4 pt-3.5 pb-[20px] bg-white rounded-md border border-[#e6e6e6] text-[#999999] text-base font-normal font-poppins  leading-tight'
           placeholder='Subjects'
         ></textarea>
       </div>
