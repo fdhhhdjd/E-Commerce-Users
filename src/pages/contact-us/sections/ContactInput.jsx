@@ -26,7 +26,7 @@ const ContactInput = () => {
           <input
             type='email'
             className='w-full md:w-[434px] h-[49px] pl-4 pr-4 py-3.5 bg-white rounded-md border border-[#e6e6e6] text-[#666666] text-base font-normal font-poppins  leading-tight'
-            placeholder='zakirsoft@gmail.com'
+            placeholder='nguyentientai@gmail.com'
           />
         </div>
 
