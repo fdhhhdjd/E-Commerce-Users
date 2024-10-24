@@ -6,7 +6,7 @@ import person3 from '@/assets/images/about/Person3.svg';
 import star1 from '@/assets/images/about/Star1.svg';
 import vector from '@/assets/images/about/Vector.svg';
 
-const AboutTestimonialFive = () => {
+const AboutTestimonial = () => {
   const reviews = [
     {
       id: 1,
@@ -101,4 +101,4 @@ const AboutTestimonialFive = () => {
   );
 };
 
-export default AboutTestimonialFive;
+export default AboutTestimonial;

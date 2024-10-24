@@ -1,17 +1,19 @@
-import AboutDeliveryThree from './sections/AboutDeliveryThree';
-import AboutMeTwo from './sections/AboutMeTwo';
-import AboutTeamFour from './sections/AboutTeamFour';
-import AboutTestimonialFive from './sections/AboutTestimonialFive';
-import AboutUsOne from './sections/AboutUsOne';
+import AboutCompanyLogo from './sections/AboutCompanyLogo';
+import AboutDelivery from './sections/AboutDelivery';
+import AboutMe from './sections/AboutMe';
+import AboutOur from './sections/AboutOur';
+import AboutTeam from './sections/AboutTeam';
+import AboutTestimonial from './sections/AboutTestimonial';
 
 const AboutUs = () => {
   return (
     <div className='w-full h-full flex flex-col '>
-      <AboutUsOne />
-      <AboutMeTwo />
-      <AboutDeliveryThree />
-      <AboutTeamFour />
-      <AboutTestimonialFive />
+      <AboutOur />
+      <AboutMe />
+      <AboutDelivery />
+      <AboutTeam />
+      <AboutTestimonial />
+      <AboutCompanyLogo />
     </div>
   );
 };

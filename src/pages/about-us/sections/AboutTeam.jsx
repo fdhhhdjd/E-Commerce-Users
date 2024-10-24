@@ -7,7 +7,7 @@ import person4 from '@/assets/images/about/Person4.png';
 import pinterest from '@/assets/images/about/Pinterest.svg';
 import twitter from '@/assets/images/about/Twitter.svg';
 
-const AboutTeamFour = () => {
+const AboutTeam = () => {
   const personData = [
     {
       image: person1,
@@ -101,4 +101,4 @@ const AboutTeamFour = () => {
   );
 };
 
-export default AboutTeamFour;
+export default AboutTeam;

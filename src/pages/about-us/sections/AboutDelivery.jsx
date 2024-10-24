@@ -1,7 +1,7 @@
 import arrowRight from '@/assets/images/about/ArrowRight.svg';
 import check from '@/assets/images/about/Check.svg';
 import delivery from '@/assets/images/about/Delivery.png';
-const AboutDeliveryThree = () => {
+const AboutDelivery = () => {
   const features = [
     'Sed in metus pellentesque.',
     'Fusce et ex commodo, aliquam nulla efficitur, tempus lorem.',
@@ -68,4 +68,4 @@ const AboutDeliveryThree = () => {
   );
 };
 
-export default AboutDeliveryThree;
+export default AboutDelivery;

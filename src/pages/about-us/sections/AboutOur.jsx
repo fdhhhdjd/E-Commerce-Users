@@ -1,6 +1,6 @@
 import image1 from '@/assets/images/about/Image.png';
 
-const AboutUsOne = () => {
+const AboutOur = () => {
   return (
     <div className='flex flex-col lg:flex-row px-4 lg:px-[150px] xl:px-[200px] 2xl:px-[300px] gap-6 lg:gap-[58px] mt-10 lg:mt-20 mb-20'>
       {/* 1 */}
@@ -29,4 +29,4 @@ const AboutUsOne = () => {
   );
 };
 
-export default AboutUsOne;
+export default AboutOur;

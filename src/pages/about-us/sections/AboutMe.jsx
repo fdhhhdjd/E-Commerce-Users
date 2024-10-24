@@ -7,7 +7,7 @@ import box from '@/assets/images/about/Package.svg';
 import shopping from '@/assets/images/about/ShoppingBag.svg';
 import star from '@/assets/images/about/Star.svg';
 
-const AboutMeTwo = () => {
+const AboutMe = () => {
   const features = [
     {
       icon: leaf,
@@ -129,4 +129,4 @@ const AboutMeTwo = () => {
   );
 };
 
-export default AboutMeTwo;
+export default AboutMe;
