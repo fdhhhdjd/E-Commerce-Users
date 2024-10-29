@@ -23,7 +23,7 @@ const AdsPopup = () => {
               <div className='w-[428px] flex justify-center items-center'>
                 <div className='w-full text-center'>
                   <span className='text-[#999999] text-sm md:text-base font-normal font-poppins leading-normal'>
-                    Subscribe to our newsletter and Save your
+                    Subscribe to our newsletter and Save your{' '}
                   </span>
                   <span className='text-[#ff8900] text-sm md:text-base font-semibold font-poppins leading-tight'>
                     20% money
