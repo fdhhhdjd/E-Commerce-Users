@@ -1,11 +1,33 @@
+import React from 'react';
+
 import ads from '@/assets/images/popup/Ads.png';
 import close from '@/assets/images/popup/Close.svg';
 import Ellipse from '@/assets/images/popup/Ellipse.svg';
 
+import { cn } from '@/helpers';
+
 const AdsPopup = () => {
+  const [isVisible, setIsVisible] = React.useState(true);
+  const [isClosing, setIsClosing] = React.useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsVisible(false);
+    }, 500); // Match the duration of the slide-down animation
+  };
+
+  if (!isVisible) return null;
+
   return (
     <div className='fixed top-0 left-0 w-full h-full bg-opacity-80 bg-black z-50 flex items-center justify-center'>
-      <div className='max-w-[872px] max-h-[400px] flex justify-between bg-white rounded-lg shadow-lg py-2.5 px-2.5'>
+      <div
+        className={cn(
+          'popup-container max-w-[872px] max-h-[400px] flex justify-between bg-white rounded-lg shadow-lg py-2.5 px-2.5',
+          isClosing ? 'slide-down' : ''
+        )}
+      >
+        {' '}
         {/* 1 */}
         <div className='w-full flex justify-between gap-10'>
           <div className='max-w-[354px] max-h-[380px] rounded'>
@@ -63,13 +85,12 @@ const AdsPopup = () => {
             </div>
           </div>
         </div>
-
         {/* 3 */}
-        <div className='relative'>
+        <div className='relative' onClick={handleClose}>
           <div className='left-0 top-0 bg-white rounded-full relative'>
             <img src={Ellipse} alt='This is Ellipse' />
           </div>
-          <div className='w-[25px] h-[25px] left-[10px] top-[10px] absolute cursor-pointer'>
+          <div className='w-[25px] h-[25px] left-[10px] top-[10px] absolute cursor-pointer close-button'>
             <img src={close} alt='This is close' />
           </div>
         </div>

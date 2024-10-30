@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 import Rectangle from '@/components/NavItemSections/Rectangle';
 import Footer from '@/layouts/footer';
 import Navigation from '@/layouts/navigation';
-import AdsPopup from '@/layouts/Popup/AdsPopup';
+import AdsPopup from '@/layouts/popup/AdsPopup';
 
 const MainLayout = () => {
   return (

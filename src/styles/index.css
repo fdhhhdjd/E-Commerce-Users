@@ -11,3 +11,50 @@
 .no-spinner {
   -moz-appearance: textfield;
 }
+
+/* PopUp */
+@keyframes slideUp {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.popup-container {
+  animation: slideUp 0.8s ease-out;
+}
+
+.popup-container.slide-down {
+  animation: slideDown 0.5s ease-out;
+}
+
+.close-button:hover {
+  animation: rotate 1s ease-in-out;
+}
