@@ -2,7 +2,9 @@ import React from 'react';
 
 import apple from '@/assets/images/home/Apple.png';
 import bag from '@/assets/images/home/Bag.svg';
+import bagWhite from '@/assets/images/home/BagWhite.svg';
 import container from '@/assets/images/home/Container.svg';
+import containerGreen from '@/assets/images/home/ContainerGreen.svg';
 import fruit1 from '@/assets/images/home/fruit1.png';
 import fruit2 from '@/assets/images/home/fruit2.png';
 import fruit3 from '@/assets/images/home/fruit3.png';
@@ -67,13 +69,13 @@ const HomeFeatured = () => {
             className={cn(
               'w-[248px] h-[339px] relative bg-white rounded-lg border',
               selectedProduct === index
-                ? 'shadow-lg border-[#2c732f]'
+                ? 'shadow-lg border-[#2c732f] border-[2px]'
                 : 'border-[#e6e6e6]'
             )}
           >
             <div className='p-px left-0 top-0 absolute justify-start items-start inline-flex'>
               <img
-                className='w-[246px] h-[246px]'
+                className='w-[246px] h-[246px] mix-blend-multiply'
                 src={product.image}
                 alt={product.name}
               />
@@ -102,13 +104,13 @@ const HomeFeatured = () => {
             </div>
             <div className='w-10 h-10 left-[192px] top-[274px] absolute'>
               <img
-                src={container}
-                className='w-10 h-10 left-0 top-0 absolute bg-[#f2f2f2] rounded-full mix-blend-multiply'
+                src={selectedProduct === index ? containerGreen : container}
+                className='w-10 h-10 left-0 top-0 absolute rounded-full '
                 alt='Container'
               />
               <img
-                src={bag}
-                className='w-5 h-5 left-[10px] top-[10px] absolute mix-blend-multiply'
+                src={selectedProduct === index ? bagWhite : bag}
+                className='w-5 h-5 left-[10px] top-[10px] absolute '
                 alt='Bag'
               />
             </div>
