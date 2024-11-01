@@ -32,6 +32,11 @@ const HomeBG = () => {
     <div className='w-full h-[1087px] flex flex-col items-center pt-6 gap-[100px]'>
       {/* 1 */}
       <div className='w-[1520px] h-[804px] bg-[#edf2ed] rounded-lg flex flex-col justify-center items-center relative'>
+        <div className='h-2 left-[736px] top-[692px] absolute justify-start items-center gap-2 inline-flex'>
+          <div className='w-2 h-2 bg-[#b3ccb4] rounded-full' />
+          <div className='w-4 h-2 bg-[#00b206] rounded-[50px]' />
+          <div className='w-2 h-2 bg-[#b3ccb4] rounded-full' />
+        </div>
         <div className='flex justify-center items-center'>
           {/* 1.1 */}
           <div className='flex flex-col'>
