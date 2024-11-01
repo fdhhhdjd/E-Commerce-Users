@@ -6,6 +6,28 @@ import packageIcon from '@/assets/images/home/Package.svg';
 import shopping from '@/assets/images/home/ShoppingBag.svg';
 
 const HomeBG = () => {
+  const serviceData = [
+    {
+      icon: delivery,
+      title: 'Free Shipping',
+      description: 'Free shipping on all your orders'
+    },
+    {
+      icon: headPhones,
+      title: 'Customer Support 24/7',
+      description: 'Instant access to Support'
+    },
+    {
+      icon: shopping,
+      title: '100% Secure Payment',
+      description: 'We ensure your money is safe'
+    },
+    {
+      icon: packageIcon,
+      title: 'Money-Back Guarantee',
+      description: '30 Days Money-Back Guarantee'
+    }
+  ];
   return (
     <div className='w-full h-[1087px] flex flex-col items-center pt-6 gap-[100px]'>
       {/* 1 */}
@@ -50,61 +72,27 @@ const HomeBG = () => {
         </div>
 
         {/* 2 */}
-        <div className='w-[1400px] h-32 p-10 bg-white rounded-lg shadow justify-between items-center inline-flex bottom-[-64px] absolute'>
-          <div className='justify-center items-center gap-4 flex'>
-            <img src={delivery} alt='this is delivery' className='w-10 h-10' />
-            <div className='flex-col justify-center items-start gap-2 inline-flex'>
-              <div className="w-[250px] text-[#191919] text-base font-semibold font-['Poppins'] leading-tight">
-                Free Shipping
-              </div>
-              <div className="w-[250px] text-[#999999] text-sm font-normal font-['Poppins'] leading-[21px]">
-                Free shipping on all your order
-              </div>
-            </div>
-          </div>
-          <div className='justify-center items-center gap-4 flex'>
-            <img
-              src={headPhones}
-              alt='this is headPhones'
-              className='w-10 h-10'
-            />
-
-            <div className='flex-col justify-center items-start gap-2 inline-flex'>
-              <div className="w-[250px] text-[#191919] text-base font-semibold font-['Poppins'] leading-tight">
-                Customer Support 24/7
-              </div>
-              <div className="w-[250px] text-[#999999] text-sm font-normal font-['Poppins'] leading-[21px]">
-                Instant access to Support
+        <div className='w-full max-w-[90%] sm:max-w-[1400px] p-6 sm:p-10 bg-white rounded-lg shadow flex flex-wrap justify-center sm:justify-between items-center gap-4 sm:gap-0 bottom-[-64px] absolute'>
+          {serviceData.map((service, index) => (
+            <div
+              key={index}
+              className='w-full sm:w-auto flex justify-center items-center gap-4 p-2 sm:p-0'
+            >
+              <img
+                src={service.icon}
+                alt={`icon for ${service.title}`}
+                className='w-8 h-8 sm:w-10 sm:h-10'
+              />
+              <div className='flex flex-col items-start text-center sm:text-left'>
+                <div className='w-full text-[#191919] text-sm sm:text-base font-semibold font-poppins leading-tight'>
+                  {service.title}
+                </div>
+                <div className='w-full text-[#999999] text-xs sm:text-sm font-normal font-poppins leading-[21px]'>
+                  {service.description}
+                </div>
               </div>
             </div>
-          </div>
-          <div className='justify-center items-center gap-4 flex'>
-            <img src={shopping} alt='this is shopping' className='w-10 h-10' />
-
-            <div className='flex-col justify-center items-start gap-2 inline-flex'>
-              <div className="w-[250px] text-[#191919] text-base font-semibold font-['Poppins'] leading-tight">
-                100% Secure Payment
-              </div>
-              <div className="w-[250px] text-[#999999] text-sm font-normal font-['Poppins'] leading-[21px]">
-                We ensure your money is save
-              </div>
-            </div>
-          </div>
-          <div className='justify-center items-center gap-4 flex'>
-            <img
-              src={packageIcon}
-              alt='this is package'
-              className='w-10 h-10'
-            />
-            <div className='flex-col justify-center items-start gap-2 inline-flex'>
-              <div className="w-[250px] text-[#191919] text-base font-semibold font-['Poppins'] leading-tight">
-                Money-Back Guarantee
-              </div>
-              <div className="w-[250px] text-[#999999] text-sm font-normal font-['Poppins'] leading-[21px]">
-                30 Days Money-Back Guarantee
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
