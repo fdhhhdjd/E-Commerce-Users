@@ -3,7 +3,7 @@ import HomeFeatured from './sections/HomeFeatured';
 
 const HomePage = () => {
   return (
-    <div className='w-full h-full flex flex-col gap-[100px]'>
+    <div className='w-full h-full flex flex-col justify-center items-center gap-[100px]'>
       {/* 1 */}
       <HomeBG />
       {/* 2 */}

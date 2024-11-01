@@ -29,7 +29,7 @@ const HomeBG = () => {
     }
   ];
   return (
-    <div className='w-full h-[1087px] flex flex-col items-center pt-6 gap-[100px]'>
+    <div className='w-full h-[868px] flex flex-col items-center pt-6'>
       {/* 1 */}
       <div className='w-[1520px] h-[804px] bg-[#edf2ed] rounded-lg flex flex-col justify-center items-center relative'>
         <div className='h-2 left-[736px] top-[692px] absolute justify-start items-center gap-2 inline-flex'>
