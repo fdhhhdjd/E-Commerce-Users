@@ -15,9 +15,7 @@ import star from '@/assets/images/home/Star.svg';
 import { cn } from '@/helpers';
 
 import HomeBanner from './HomeBanner';
-import HomeBestSeller from './HomeBestSeller';
-import HomeHotDeal from './HomeHotDeal';
-import HomeTopRated from './HomeTopRated';
+import HomeProductCategory from './HomeProductCategory';
 
 const HomeFeatured = () => {
   const [selectedProduct, setSelectedProduct] = React.useState(null);
@@ -51,6 +49,39 @@ const HomeFeatured = () => {
       name: 'Corn',
       price: '$14.99',
       rating: 5
+    }
+  ];
+
+  const categories = [
+    {
+      title: 'Hot Deals',
+      products: [
+        {
+          id: 1,
+          name: 'Green Apple',
+          price: '$14.99',
+          image: apple,
+          rating: 5
+        },
+        { id: 2, name: 'Red Apple', price: '$12.99', image: apple, rating: 4 },
+        { id: 3, name: 'Red Apple', price: '$12.99', image: apple, rating: 4 }
+      ]
+    },
+    {
+      title: 'Best Seller',
+      products: [
+        { id: 4, name: 'Banana', price: '$9.99', image: apple, rating: 4 },
+        { id: 5, name: 'Orange', price: '$8.99', image: apple, rating: 5 },
+        { id: 6, name: 'Orange', price: '$8.99', image: apple, rating: 5 }
+      ]
+    },
+    {
+      title: 'Top Rated',
+      products: [
+        { id: 7, name: 'Pineapple', price: '$15.99', image: apple, rating: 5 },
+        { id: 8, name: 'Mango', price: '$13.99', image: apple, rating: 4 },
+        { id: 9, name: 'Orange', price: '$8.99', image: apple, rating: 5 }
+      ]
     }
   ];
   return (
@@ -128,13 +159,15 @@ const HomeFeatured = () => {
       {/* 4 */}
       <div className='w-[1320px] flex gap-6 justify-between'>
         {/* 4.1 */}
-        <HomeHotDeal />
-
-        {/* 4.2 */}
-        <HomeBestSeller />
-
-        {/* 4.3 */}
-        <HomeTopRated />
+        <div className='w-[130px] flex gap-6 justify-between'>
+          {categories.map(category => (
+            <HomeProductCategory
+              key={category.title}
+              title={category.title}
+              products={category.products}
+            />
+          ))}
+        </div>
 
         {/* 4.4 */}
         <HomeBanner />
