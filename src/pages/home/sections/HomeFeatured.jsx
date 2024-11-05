@@ -14,6 +14,11 @@ import star from '@/assets/images/home/Star.svg';
 
 import { cn } from '@/helpers';
 
+import HomeBanner from './HomeBanner';
+import HomeBestSeller from './HomeBestSeller';
+import HomeHotDeal from './HomeHotDeal';
+import HomeTopRated from './HomeTopRated';
+
 const HomeFeatured = () => {
   const [selectedProduct, setSelectedProduct] = React.useState(null);
   const productData = [
@@ -54,13 +59,15 @@ const HomeFeatured = () => {
       <div className='text-[#191919] text-[40px] font-semibold font-poppins leading-[48px]'>
         Featured Products
       </div>
+
+      {/* 2 */}
       <div className='justify-start items-start gap-1 inline-flex'>
         <div className='w-3 h-1 opacity-30 bg-[#00b206]' />
         <div className='w-10 h-1 bg-[#00b206]' />
         <div className='w-3 h-1 opacity-30 bg-[#00b206]' />
       </div>
 
-      {/* 2 */}
+      {/* 3 */}
       <div className='justify-start items-start gap-5 inline-flex'>
         {productData.map((product, index) => (
           <div
@@ -116,6 +123,21 @@ const HomeFeatured = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* 4 */}
+      <div className='w-[1320px] flex gap-6 justify-between'>
+        {/* 4.1 */}
+        <HomeHotDeal />
+
+        {/* 4.2 */}
+        <HomeBestSeller />
+
+        {/* 4.3 */}
+        <HomeTopRated />
+
+        {/* 4.4 */}
+        <HomeBanner />
       </div>
     </div>
   );
