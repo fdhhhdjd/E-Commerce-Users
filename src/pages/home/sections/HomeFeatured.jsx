@@ -107,7 +107,7 @@ const HomeFeatured = () => {
             className={cn(
               'w-[248px] h-[339px] relative bg-white rounded-lg border',
               selectedProduct === index
-                ? 'shadow-lg border-[#2c732f] border-[2px]'
+                ? 'shadow-lg border-[#2c732f] border'
                 : 'border-[#e6e6e6]'
             )}
           >
