@@ -1,6 +1,7 @@
 import HomeBG from './sections/HomeBG';
 import HomeFeatured from './sections/HomeFeatured';
 import HomeInfoBannerSale from './sections/HomeInfoBannerSale';
+import HomeNewestProducts from './sections/HomeNewestProducts';
 import HomeTopCategory from './sections/HomeTopCategory';
 
 const HomePage = () => {
@@ -17,6 +18,9 @@ const HomePage = () => {
 
       {/* 4 */}
       <HomeInfoBannerSale />
+
+      {/* 5 */}
+      <HomeNewestProducts />
     </div>
   );
 };
