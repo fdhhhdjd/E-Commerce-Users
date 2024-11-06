@@ -8,6 +8,8 @@ import snacks from '@/assets/images/home/Snacks.svg';
 import softDrink from '@/assets/images/home/SoftDrink.svg';
 import vegetable from '@/assets/images/home/Vegetable.svg';
 
+import { cn } from '@/helpers';
+
 const HomeTopCategory = () => {
   const [selectedCategory, setSelectedCategory] = React.useState(0);
   const [startIndex, setStartIndex] = React.useState(0);
@@ -87,7 +89,14 @@ const HomeTopCategory = () => {
                 <img src={category.image} alt={category.name} />
               </div>
               <div className='flex-col justify-start items-center gap-1.5 flex'>
-                <div className='w-[200px] text-center text-[#2c732f] text-lg font-medium font-poppins leading-[27px]'>
+                <div
+                  className={cn(
+                    'w-[200px] text-center text-[#2c732f] text-lg font-medium font-poppins leading-[27px]',
+                    selectedCategory === startIndex + index
+                      ? 'text-[#2c732f]'
+                      : 'text-[#191919]'
+                  )}
+                >
                   {category.name}
                 </div>
                 <div className='w-[200px] text-center text-[#7f7f7f] text-sm font-normal font-poppins leading-[21px]'>

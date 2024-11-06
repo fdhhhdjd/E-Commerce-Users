@@ -35,7 +35,14 @@ const HomeProductCategory = ({ title, products }) => {
               />
             </div>
             <div className='w-[190px] px-3 pt-6 pb-[25px] flex-col gap-1.5 inline-flex'>
-              <div className='text-[#2c732f] text-sm font-normal leading-[21px]'>
+              <div
+                className={cn(
+                  'text-[#2c732f] text-sm font-normal leading-[21px]',
+                  selectedProductId === product.id
+                    ? 'text-[#2c732f] '
+                    : 'text-[#4c4c4c]'
+                )}
+              >
                 {product.name}
               </div>
               <div className='text-[#191919] text-base font-medium leading-normal'>
