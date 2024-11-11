@@ -3,6 +3,7 @@ import HomeFeatured from './sections/HomeFeatured';
 import HomeInfoBannerSale from './sections/HomeInfoBannerSale';
 import HomeNewestProducts from './sections/HomeNewestProducts';
 import HomeTopCategory from './sections/HomeTopCategory';
+import AboutTestimonial from '../about-us/sections/AboutTestimonial';
 
 const HomePage = () => {
   return (
@@ -21,6 +22,9 @@ const HomePage = () => {
 
       {/* 5 */}
       <HomeNewestProducts />
+
+      {/* 6 */}
+      <AboutTestimonial />
     </div>
   );
 };
