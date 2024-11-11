@@ -9,6 +9,8 @@
 
 # Project: E-Commerce User
 
+# Note: This is project of class teacher Tai.
+
 ## Team Word: Liên hệ công việc https://profile-forme.com
 
 ## 1. Nguyen Tien Tai.
