@@ -2,6 +2,7 @@ import HomeBG from './sections/HomeBG';
 import HomeFeatured from './sections/HomeFeatured';
 import HomeInfoBannerSale from './sections/HomeInfoBannerSale';
 import HomeNewestProducts from './sections/HomeNewestProducts';
+import HomeSocial from './sections/HomeSocial';
 import HomeTopCategory from './sections/HomeTopCategory';
 import AboutTestimonial from '../about-us/sections/AboutTestimonial';
 
@@ -25,6 +26,9 @@ const HomePage = () => {
 
       {/* 6 */}
       <AboutTestimonial />
+
+      {/* 7 */}
+      <HomeSocial />
     </div>
   );
 };
